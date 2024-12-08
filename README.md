@@ -21,23 +21,18 @@ A Django-based API for managing tasks, projects, and user assignments with role-
   - Add comments to tasks.
   - Track comments by users.
 
-## API Endpoints
+## Tools and Libraries
 
-| Endpoint                | Method | Description                                   |
-|-------------------------|--------|-----------------------------------------------|
-| `/api/register/`        | POST   | Register a new user.                         |
-| `/api/login/`           | POST   | User login to obtain authentication token.   |
-| `/api/projects/`        | GET    | List all projects.                           |
-| `/api/projects/`        | POST   | Create a new project.                        |
-| `/api/projects/<id>/`   | GET    | Retrieve a specific project by ID.           |
-| `/api/projects/<id>/`   | PUT    | Update a project by ID.                      |
-| `/api/projects/<id>/`   | DELETE | Delete a project by ID.                      |
-| `/api/tasks/`           | GET    | List all tasks.                              |
-| `/api/tasks/`           | POST   | Create a new task.                           |
-| `/api/tasks/<id>/`      | GET    | Retrieve a specific task by ID.              |
-| `/api/tasks/<id>/`      | PUT    | Update a task by ID.                         |
-| `/api/tasks/<id>/`      | DELETE | Delete a task by ID.                         |
-| `/api/comments/`        | POST   | Add a comment to a task.                     |
+- **Django**: For building the backend framework and handling database operations, views, and URLs.
+- **Django REST Framework (DRF)**: For building the API endpoints, handling serialization, and providing a straightforward way to create APIs.
+- **Django ORM**: For database interaction and managing models such as `User`, `Project`, `Task`, and `Comment`.
+- **MySQL**: For the database, used to store data related to users, projects, tasks, and comments.
+- **JWT or Django Authentication**: For secure user authentication via JWT tokens or Django's built-in authentication system.
+- **Postman**: For testing API endpoints and ensuring that they are functioning as expected.
+- **Git**: For version control to manage the project and track changes over time.
+- **GitHub**: For hosting the project repository and collaboration.
+- **Heroku CLI**: For deploying the application to Heroku or other cloud services.
+- **Docker (Optional)**: For containerizing the application to ensure consistency across development and production environments.
 
 ## Installation and Setup
 
@@ -54,5 +49,11 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-username>/task_management_api.git
+   git clone https://github.com/fedelesharon/Task_management_API.git
    cd task_management_api
+
+2. **Run the server**:
+   ```bash
+   python manage.py runserver
+   
+    
