@@ -56,18 +56,5 @@ We use **JWT (JSON Web Token)** authentication to secure API endpoints.
 
 ---
 
-### **Deliverables**
-
-1. **GitHub Repository**  
-   - Include the code with authentication setup.
-   - Add the `authentication.md` file to the repository.
-   - Use a dedicated branch for authentication changes (e.g., `feature/authentication`).
-
-2. **Evidence of Functionality**  
-   - Include screenshots of:
-     - Token obtain and refresh responses.
-     - Accessing a secured endpoint with and without a valid token.
-
----
 
 
