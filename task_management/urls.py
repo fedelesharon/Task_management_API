@@ -16,8 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import RedirectView
+from tasks.views import favicon_view, home_view  # Import the favicon view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('tasks.urls')),
+    path('favicon.ico', favicon_view),  # Add this line for the favicon
+    path('', home_view, name='home'),  # Add this line for the home view
 ]
