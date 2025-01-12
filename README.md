@@ -61,4 +61,44 @@ Follow these steps to set up the project locally:
 5. **Evidence of Functionality** indicates where to find evidence of successful API usage.
 
 This `README.md` file is a comprehensive guide for your project and can be placed directly in your GitHub repository for clarity.
-   
+
+### Endpoints
+GET /tasks: Retrieve a list of tasks.
+
+POST /tasks: Create a new task.
+
+GET /tasks/{ taskId}: Retrieve details of a specific task.
+
+PATCH /tasks/{taskId}: Update an existing task.
+
+DELETE /tasks/{taskId}: Delete a specific task.
+
+GET /lists: Retrieve a list of task lists.
+
+POST /lists: Create a new task list.
+
+GET /lists/{listId}: Retrieve details of a specific task list.
+
+PATCH /lists/{listId}: Update an existing task list.
+
+DELETE /lists/{listId}: Delete a specific task list.
+
+GET /tags: Retrieve a list of tags.
+
+POST /tags: Create a new tag.
+
+GET /tags/{tagId}: Retrieve details of a specific tag.
+
+PATCH /tags/{tagId}: Update an existing tag.
+
+DELETE /tags/{tagId}: Delete a specific tag.
+
+GET /subtasks: Retrieve a list of subtasks.
+
+POST /subtasks: Create a new subtask.
+
+GET /subtasks/{subtaskId}: Retrieve details of a specific subtask.
+
+PATCH /subtasks/{subtaskId}: Update an existing subtask.
+
+DELETE /subtasks/{subtaskId}: Delete a specific subtask.   
